@@ -67,3 +67,15 @@ def Union(list_one, list_two):
 user_list_one=input('Enter the first list:')
 user_list_two=input('Enter the second list:')
 Union(user_list_one, user_list_two)
+
+def Intersection (list_one, list_two):
+    out_list=[]
+    list_one=list_one.split(" ")
+    list_two=list_two.split(" ")
+    for i in list_one:
+        if i in list_two:
+            out_list.append(i)
+    print ('OUTPUT', out_list)
+user_list1=input('Enter the first list:')
+user_list2=input('Enter the second list:')
+Intersection (user_list1, user_list2)
