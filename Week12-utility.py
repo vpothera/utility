@@ -49,3 +49,21 @@ user_names=input('Enter names:')
 user_scores=input('Enter scores:')
 user_name=input('Enter name to search:')
 ScoreFinder(user_names, user_scores, user_name)
+
+def Union(list_one, list_two):
+    union_list=[]
+    list_one=list_one.split(" ")
+    list_two=list_two.split(" ")
+    for i in list_one:
+        if i not in list_two:
+            union_list.append(i)
+    for i in list_two:
+        if i not in list_one:
+            union_list.append(i)
+    for i in union_list:
+        if i==' ':
+            union_list.remove(i)
+    print ('OUTPUT', union_list)
+user_list_one=input('Enter the first list:')
+user_list_two=input('Enter the second list:')
+Union(user_list_one, user_list_two)
