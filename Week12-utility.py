@@ -34,3 +34,18 @@ def FindWordCount(orig_list, orig_string):
 user_list=input('Enter file for list:')
 user_string=input('Enter string:')
 FindWordCount(user_list, user_string)
+
+def ScoreFinder(name_list, score_list, name):
+    name_list=name_list.lower()
+    name=name.lower()
+    name_list=name_list.split(" ")
+    score_list=score_list.split(" ")
+    if name in name_list:
+        index=name_list.index(name)
+        print(score_list[index])
+    else:
+        print ('OUTPUT player not found')
+user_names=input('Enter names:')
+user_scores=input('Enter scores:')
+user_name=input('Enter name to search:')
+ScoreFinder(user_names, user_scores, user_name)
