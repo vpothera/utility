@@ -79,3 +79,15 @@ def Intersection (list_one, list_two):
 user_list1=input('Enter the first list:')
 user_list2=input('Enter the second list:')
 Intersection (user_list1, user_list2)
+
+def NotIn (list_one, list_two):
+    out_list=[]
+    list_one=list_one.split(" ")
+    list_two=list_two.split(" ")
+    for i in list_one:
+        if i not in list_two:
+            out_list.append(i)
+    print ('OUTPUT', out_list)
+user_list1=input('Enter the first list:')
+user_list2=input('Enter the second list:')
+NotIn (user_list1, user_list2)
