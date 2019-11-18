@@ -22,3 +22,15 @@ user_string2=str(input('Enter string:'))
 user_index=int(input('Enter index:'))
 print(f'>>>UpdateString({user_string}, {user_string2}, {user_index})')
 UpdateString(user_string, user_string2, user_index)
+
+def FindWordCount(orig_list, orig_string):
+    num_total=0
+    contents=LoadFile(orig_list)
+    for i in range(len(contents)):
+        num_line=0
+        num_line=contents[i].count(orig_string)
+        num_total=num_total+num_line
+    print ('OUTPUT', num_total)
+user_list=input('Enter file for list:')
+user_string=input('Enter string:')
+FindWordCount(user_list, user_string)
